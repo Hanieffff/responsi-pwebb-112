@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Buku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Buku</a></li>
+                <li><a href="order.html">Pesan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Order Buku</h2>
+        <form action="order.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="Nama" name="nama" required><br>
+            <label for="book">Buku:</label>
+            <input type="text" id="Buku" name="buku" required><br>
+            <label for="date">Tanggal Pemesanan:</label>
+            <input type="date" id="Tanggal" name="date" required><br>
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+</body>
+</html>
